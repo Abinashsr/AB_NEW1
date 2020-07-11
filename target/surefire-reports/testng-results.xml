@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: LoginApplicationFirst.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: Login with First Url</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: Testing First Url</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Testing First Url</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  user is on homepage using first url (passed : 25s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  user enter username &quot;&lt;UserName&gt;&quot; and User enter password &quot;&lt;Password&gt;&quot; for first url (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  user navigates to Login Page using first url (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Close the first url browser (passed : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29993" started-at="2020-07-11T08:50:09Z" finished-at="2020-07-11T08:50:39Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:runner.testrunner@47f6473]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="29993" started-at="2020-07-11T08:50:09Z" finished-at="2020-07-11T08:50:39Z">
+      <class name="runner.testrunner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:runner.testrunner@47f6473]" name="run_cukes" duration-ms="29784" started-at="2020-07-11T14:20:09Z" description="Runs Cucumber Features" finished-at="2020-07-11T14:20:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: LoginApplicationFirst.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: Login with First Url</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: Testing First Url</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Testing First Url</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  user is on homepage using first url (passed : 25s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  user enter username &quot;&lt;UserName&gt;&quot; and User enter password &quot;&lt;Password&gt;&quot; for first url (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  user navigates to Login Page using first url (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Close the first url browser (passed : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runner.testrunner@47f6473]" name="writeExtentReport" is-config="true" duration-ms="195" started-at="2020-07-11T14:20:39Z" finished-at="2020-07-11T14:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeExtentReport -->
+      </class> <!-- runner.testrunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
