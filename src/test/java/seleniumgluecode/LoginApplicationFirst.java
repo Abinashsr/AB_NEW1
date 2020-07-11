@@ -61,19 +61,10 @@ public class LoginApplicationFirst extends Browser{
 
 	@Then("^Close the first url browser$")
 	public void close_the_first_url_browser() throws Throwable {
+		driver.quit();
         Reporter.addStepLog("Browser is closed successfully");
 	}
 	
-        @After
-        public void tearDown(Scenario scenario) {
-          try {
-            if (scenario.isFailed()) {
-              final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-              scenario.embed(screenshot, "image/png");
-            }
-          } finally {
-            driver.quit();
-          }
-        }}
+}
 
 

@@ -7,23 +7,12 @@
         "name": "Testing First Url",
         "description": "",
         "id": "login-with-first-url;testing-first-url;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 875107100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginApplicationFirst.tearDown(Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12897460800,
+              "duration": 19023978100,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 292885500,
+              "duration": 440539600,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 732438400,
+              "duration": 832180700,
               "status": "passed"
             },
             "line": 7,
@@ -73,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 945100,
+              "duration": 3242973100,
               "status": "passed"
             },
             "line": 8,

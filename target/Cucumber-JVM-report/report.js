@@ -95,7 +95,7 @@ formatter.match({
   "location": "LoginApplicationFirst.user_is_on_homepage_using_first_url()"
 });
 formatter.result({
-  "duration": 12897460800,
+  "duration": 19023978100,
   "status": "passed"
 });
 formatter.match({
@@ -112,25 +112,21 @@ formatter.match({
   "location": "LoginApplicationFirst.user_enter_username_and_User_enter_password_for_first_url(String,String)"
 });
 formatter.result({
-  "duration": 292885500,
+  "duration": 440539600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginApplicationFirst.user_navigates_to_Login_Page_using_first_url()"
 });
 formatter.result({
-  "duration": 732438400,
+  "duration": 832180700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginApplicationFirst.close_the_first_url_browser()"
 });
 formatter.result({
-  "duration": 945100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 875107100,
+  "duration": 3242973100,
   "status": "passed"
 });
 });
