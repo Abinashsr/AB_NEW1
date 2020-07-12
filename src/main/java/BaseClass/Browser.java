@@ -31,15 +31,11 @@ public class Browser {
 		// If the browser is Chrome
 		else if (browsername.equalsIgnoreCase("Chrome")) {
 			// Set the path for chromedriver.exe
-			//String path = System.getProperty("user.dir");
-			//System.out.println(path); 
-			//System.setProperty("webdriver.chrome.driver",path+"//drivers//chromedriver.exe");
-			//driver = new ChromeDriver();
-			String path = System.getProperty("/usr/bin/chromedriver");
+			String path = System.getProperty("user.dir");
 			System.out.println(path); 
-			System.setProperty("webdriver.chrome.driver", path");
+			System.setProperty("webdriver.chrome.driver",path+"/usr/bin/chromedriver");
 			driver = new ChromeDriver();
-						
+			
 			//public static String chromeDriverPath = “/usr/bin/chromedriver”;
 			//System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
 			//WebDriver driver = new ChromeDriver();
