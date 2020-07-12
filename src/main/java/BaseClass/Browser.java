@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -22,12 +23,16 @@ public class Browser {
 			//String path = System.getProperty("user.dir");
 			//System.out.println(path); 
 			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
+			ChromeOptions options = new ChromeOptions();
+	        options.addArguments("headless");
+	        options.addArguments("window-size=1200x600");
+	        driver = new ChromeDriver(options);
+	  //      driver.get("https://contentstack.built.io");
+	  //      driver.get("http://test-webapp.gl-project1.com/webapp/welcome.jsp");
+	        System.out.println("Test Case Started");
+			//driver.manage().deleteAllCookies();
 			Thread.sleep(1000);
-			driver.manage().deleteAllCookies();
-			Thread.sleep(1000);
-			driver.get(url);
+			//driver.get(url);
 			return driver;
 	}
 	
