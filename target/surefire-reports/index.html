@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.testrunner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runner.testrunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,42 +127,12 @@
                   <a name="run_cukes">
                   </a> <!-- run_cukes -->
                   <span class="method-name">run_cukes</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.Error: Unresolved compilation problems: 
-	Illegal modifier for parameter geckoDriverPath; only final is permitted
-	Syntax error on token &quot;Invalid Character&quot;, invalid Expression
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, invalid Expression
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Illegal modifier for parameter geckoDriverPath; only final is permitted
-	Syntax error on token &quot;Invalid Character&quot;, invalid Expression
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, invalid Expression
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-	Syntax error on token &quot;Invalid Character&quot;, delete this token
-
-	at BaseClass.Browser.StartBrowser(Browser.java:26)
-	at seleniumgluecode.LoginApplicationFirst.user_is_on_homepage_using_first_url(LoginApplicationFirst.java:35)
-	at ?.Given user is on homepage using first url(LoginApplicationFirst.feature:5)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -227,12 +197,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'run_cukes')
 data.setCell(0, 2, 'runner.testrunner')
-data.setCell(0, 3, 898);
+data.setCell(0, 3, 12542);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 898 ms</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,10 +220,10 @@ return data;
                 <span class="reporter-method-output"><div "feature">Feature: Login with First Url</div></span>
                 <span class="reporter-method-output"><div "scenarioOutline">Scenario Outline: Testing First Url</div></span>
                 <span class="reporter-method-output"><div "scenario">Scenario Outline: Testing First Url</div></span>
-                <span class="reporter-method-output"><div "result">Given  user is on homepage using first url (failed : 0s)</div></span>
-                <span class="reporter-method-output"><div "result">Then  user enter username &quot;&lt;UserName&gt;&quot; and User enter password &quot;&lt;Password&gt;&quot; for first url (skipped)</div></span>
-                <span class="reporter-method-output"><div "result">When  user navigates to Login Page using first url (skipped)</div></span>
-                <span class="reporter-method-output"><div "result">Then  Close the first url browser (skipped)</div></span>
+                <span class="reporter-method-output"><div "result">Given  user is on homepage using first url (passed : 7s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  user enter username &quot;&lt;UserName&gt;&quot; and User enter password &quot;&lt;Password&gt;&quot; for first url (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  user navigates to Login Page using first url (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  Close the first url browser (passed : 0s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,14 +243,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.testrunner</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">run_cukes</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">906 ms</span>
+                <span class="method-start">12543 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

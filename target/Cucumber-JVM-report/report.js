@@ -95,9 +95,8 @@ formatter.match({
   "location": "LoginApplicationFirst.user_is_on_homepage_using_first_url()"
 });
 formatter.result({
-  "duration": 490837800,
-  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\Users\\eabismr\\Desktop\\Capstone_proj\\AB_NEW1\\AWSApplication\\AWS_APP\\usr\\bin\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:534)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat BaseClass.Browser.StartBrowser(Browser.java:25)\r\n\tat seleniumgluecode.LoginApplicationFirst.user_is_on_homepage_using_first_url(LoginApplicationFirst.java:35)\r\n\tat ✽.Given user is on homepage using first url(LoginApplicationFirst.feature:5)\r\n",
-  "status": "failed"
+  "duration": 7860363900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -113,18 +112,21 @@ formatter.match({
   "location": "LoginApplicationFirst.user_enter_username_and_User_enter_password_for_first_url(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 512179400,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginApplicationFirst.user_navigates_to_Login_Page_using_first_url()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1291170900,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginApplicationFirst.close_the_first_url_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2753500,
+  "status": "passed"
 });
 });

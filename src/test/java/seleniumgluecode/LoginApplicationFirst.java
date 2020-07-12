@@ -32,14 +32,14 @@ public class LoginApplicationFirst extends Browser{
 	@Given("^user is on homepage using first url$")
 	public void user_is_on_homepage_using_first_url() throws Throwable {
 		
-    	driver = Browser.StartBrowser("Chrome","http://test-webapp.gl-project1.com/webapp/welcome.jsp");
-    	driver.manage().window().maximize();
-		Thread.sleep(1000);
-		driver.manage().deleteAllCookies();
-		Thread.sleep(1000);
-        driver.manage().window().maximize();
-        Thread.sleep(1000);
-        Reporter.addStepLog("Chrome Browser is opened successfully");
+    	driver = Browser.StartBrowser("http://test-webapp.gl-project1.com/webapp/welcome.jsp");
+    	//driver.manage().window().maximize();
+		//Thread.sleep(1000);
+		//driver.manage().deleteAllCookies();
+		//Thread.sleep(1000);
+        //driver.manage().window().maximize();
+        //Thread.sleep(1000);
+        //Reporter.addStepLog("Chrome Browser is opened successfully");
         Thread.sleep(1000);
 	}
 
@@ -61,6 +61,7 @@ public class LoginApplicationFirst extends Browser{
 
 	@Then("^Close the first url browser$")
 	public void close_the_first_url_browser() throws Throwable {
+		System.out.println("Test Case Passed");
 		driver.quit();
         Reporter.addStepLog("Browser is closed successfully");
 	}
