@@ -35,9 +35,14 @@ public class Browser {
 			//System.out.println(path); 
 			//System.setProperty("webdriver.chrome.driver",path+"//drivers//chromedriver.exe");
 			//driver = new ChromeDriver();
-			public static String chromeDriverPath = “/usr/bin/chromedriver”;
-			System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
-			WebDriver driver = new ChromeDriver();
+			String path = System.getProperty("/usr/bin/chromedriver");
+			System.out.println(path); 
+			System.setProperty("webdriver.chrome.driver", path");
+			driver = new ChromeDriver();
+						
+			//public static String chromeDriverPath = “/usr/bin/chromedriver”;
+			//System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
+			//WebDriver driver = new ChromeDriver();
 		}
 		// If the browser is IE
 		else if (browsername.equalsIgnoreCase("IE")) {

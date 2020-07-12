@@ -95,8 +95,9 @@ formatter.match({
   "location": "LoginApplicationFirst.user_is_on_homepage_using_first_url()"
 });
 formatter.result({
-  "duration": 12317116500,
-  "status": "passed"
+  "duration": 86683900,
+  "error_message": "java.lang.Error: Unresolved compilation problems: \n\tIllegal modifier for parameter geckoDriverPath; only final is permitted\n\tSyntax error on token \"Invalid Character\", invalid Expression\n\tSyntax error on token \"Invalid Character\", delete this token\n\tSyntax error on token \"Invalid Character\", delete this token\n\tSyntax error on token \"Invalid Character\", delete this token\n\tSyntax error on token \"Invalid Character\", invalid Expression\n\tSyntax error on token \"Invalid Character\", delete this token\n\tSyntax error on token \"Invalid Character\", delete this token\n\tSyntax error on token \"Invalid Character\", delete this token\n\r\n\tat BaseClass.Browser.StartBrowser(Browser.java:26)\r\n\tat seleniumgluecode.LoginApplicationFirst.user_is_on_homepage_using_first_url(LoginApplicationFirst.java:35)\r\n\tat ✽.Given user is on homepage using first url(LoginApplicationFirst.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -112,21 +113,18 @@ formatter.match({
   "location": "LoginApplicationFirst.user_enter_username_and_User_enter_password_for_first_url(String,String)"
 });
 formatter.result({
-  "duration": 187584300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginApplicationFirst.user_navigates_to_Login_Page_using_first_url()"
 });
 formatter.result({
-  "duration": 704021900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginApplicationFirst.close_the_first_url_browser()"
 });
 formatter.result({
-  "duration": 699857900,
-  "status": "passed"
+  "status": "skipped"
 });
 });
