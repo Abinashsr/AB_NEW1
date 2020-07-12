@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 12, 2020 12:57:23 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 12, 2020 03:10:02 PM</span>
 				</a>
 			</li>
 			<li>
@@ -175,12 +175,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login with First Url</span>
-						<span class='test-time'>Jul 12, 2020 12:57:23 PM</span>
+						<span class='test-time'>Jul 12, 2020 03:10:02 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 0s+209ms</span>
+	<span class='duration right label'>0h 0m 0s+988ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Testing First Url</span>
@@ -195,21 +195,19 @@
 				<ul class='steps'>
 					<li test-id='4' class='node given fail' status='fail'><b>Given</b>
 						<span class="bdd-step-name">Given user is on homepage using first url</span>
-							<div class='pre'><pre>java.lang.Error: Unresolved compilation problems: 
-	Illegal modifier for parameter geckoDriverPath; only final is permitted
-	Syntax error on token "Invalid Character", invalid Expression
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", invalid Expression
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-
-	at BaseClass.Browser.StartBrowser(Browser.java:26)
+							<div class='pre'><textarea>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\eabismr\Desktop\Capstone_proj\AB_NEW1\AWSApplication\AWS_APP\usr\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at BaseClass.Browser.StartBrowser(Browser.java:25)
 	at seleniumgluecode.LoginApplicationFirst.user_is_on_homepage_using_first_url(LoginApplicationFirst.java:35)
-	at ?.Given user is on homepage using first url(LoginApplicationFirst.feature:5)
-</pre></div>
+	at ✽.Given user is on homepage using first url(LoginApplicationFirst.feature:5)
+</textarea></div>
 					</li>
 					<li test-id='5' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user enter username "AB1" and User enter password "12345" for first url</span>
@@ -282,7 +280,7 @@
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.Error</span>
+                                <span class='exception-name'>java.lang.IllegalStateException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -297,23 +295,21 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 12, 2020 12:57:23 PM</td>
+                                                        <td>Jul 12, 2020 03:10:03 PM</td>
                                                         <td class='linked' test-id='4'>Login with First Url.Testing First Url.Testing First Url.Given user is on homepage using first url</td>
-                                                        <td><pre><pre>java.lang.Error: Unresolved compilation problems: 
-	Illegal modifier for parameter geckoDriverPath; only final is permitted
-	Syntax error on token "Invalid Character", invalid Expression
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", invalid Expression
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-	Syntax error on token "Invalid Character", delete this token
-
-	at BaseClass.Browser.StartBrowser(Browser.java:26)
+                                                        <td><pre><textarea>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\eabismr\Desktop\Capstone_proj\AB_NEW1\AWSApplication\AWS_APP\usr\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at BaseClass.Browser.StartBrowser(Browser.java:25)
 	at seleniumgluecode.LoginApplicationFirst.user_is_on_homepage_using_first_url(LoginApplicationFirst.java:35)
-	at ?.Given user is on homepage using first url(LoginApplicationFirst.feature:5)
-</pre></pre></td>
+	at ✽.Given user is on homepage using first url(LoginApplicationFirst.feature:5)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -357,19 +353,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 12, 2020 12:57:23 PM</div>
+					<div class='panel-lead'>Jul 12, 2020 03:10:02 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 12, 2020 12:57:23 PM</div>
+			 		<div class='panel-lead'>Jul 12, 2020 03:10:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+291ms</div>
+					<div class='panel-lead'>0h 0m 1s+325ms</div>
 				</div>
 			</div>
 		</div>

@@ -16,45 +16,19 @@ public class Browser {
 	static WebDriver driver;
 
 	public static WebDriver StartBrowser(String browsername, String url) throws InterruptedException {
-		// If the browser is Firefox
-		if (browsername.equalsIgnoreCase("Firefox")) {
-			// Set the path for geckodriver.exe
-			//String path = System.getProperty("user.dir");
-			//System.out.println(path); 
-			//System.setProperty("webdriver.firefox.marionette",path+"//drivers//geckodriver.exe");
-			//driver = new FirefoxDriver();
-			public static String geckoDriverPath = “/usr/bin/geckodriver”;
-			System.setProperty(“webdriver.gecko.driver”, geckoDriverPath);
-			WebDriver driver = new FirefoxDriver();
-		}
-
+	
 		// If the browser is Chrome
-		else if (browsername.equalsIgnoreCase("Chrome")) {
 			// Set the path for chromedriver.exe
 			String path = System.getProperty("user.dir");
 			System.out.println(path); 
 			System.setProperty("webdriver.chrome.driver",path+"/usr/bin/chromedriver");
 			driver = new ChromeDriver();
-			
-			//public static String chromeDriverPath = “/usr/bin/chromedriver”;
-			//System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
-			//WebDriver driver = new ChromeDriver();
-		}
-		// If the browser is IE
-		else if (browsername.equalsIgnoreCase("IE")) {
-			// Set the path for IEdriver.exe
-			String path = System.getProperty("user.dir");
-			System.out.println(path); 
-			System.setProperty("webdriver.ie.driver",path+"//drivers//IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
-		}
-
-		driver.manage().window().maximize();
-		Thread.sleep(1000);
-		driver.manage().deleteAllCookies();
-		Thread.sleep(1000);
-		driver.get(url);
-		return driver;
+			driver.manage().window().maximize();
+			Thread.sleep(1000);
+			driver.manage().deleteAllCookies();
+			Thread.sleep(1000);
+			driver.get(url);
+			return driver;
 	}
 	
 	
