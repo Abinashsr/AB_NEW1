@@ -19,9 +19,9 @@ public class Browser {
 	
 		// If the browser is Chrome
 			// Set the path for chromedriver.exe
-			String path = System.getProperty("user.dir");
-			System.out.println(path); 
-			System.setProperty("webdriver.chrome.driver",path+"/usr/bin/chromedriver");
+			//String path = System.getProperty("user.dir");
+			//System.out.println(path); 
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			Thread.sleep(1000);
