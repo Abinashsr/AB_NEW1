@@ -19,10 +19,13 @@ public class Browser {
 		// If the browser is Firefox
 		if (browsername.equalsIgnoreCase("Firefox")) {
 			// Set the path for geckodriver.exe
-			String path = System.getProperty("user.dir");
-			System.out.println(path); 
-			System.setProperty("webdriver.firefox.marionette",path+"//drivers//geckodriver.exe");
-			driver = new FirefoxDriver();
+			//String path = System.getProperty("user.dir");
+			//System.out.println(path); 
+			//System.setProperty("webdriver.firefox.marionette",path+"//drivers//geckodriver.exe");
+			//driver = new FirefoxDriver();
+			public static String geckoDriverPath = “/usr/bin/geckodriver”;
+			System.setProperty(“webdriver.gecko.driver”, geckoDriverPath);
+			WebDriver driver = new FirefoxDriver();
 		}
 
 		// If the browser is Chrome
